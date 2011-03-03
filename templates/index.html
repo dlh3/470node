@@ -1,0 +1,18 @@
+<div id="indexContent">
+	<h1>Welcome to Awesome Chat</h1>
+	<h2>To chat, try "telnet cmpt470.csil.sfu.ca 8083".</h2>
+	<div id="index">
+	<a href="./upload.js">Upload a file</a><br />
+	<a href="./logs.js">Logs</a><br />
+	<br />
+	<form action="#" method="POST" enctype="text/plain" onsubmit="sendMessage(this); return false;">
+		<div id="indexChatBox">
+			<pre>
+				{{ CHAT_HISTORY }} 
+			</pre>
+		</div>
+		<br />
+		<input type="submit" value="Send" />
+		<input type="text" name="message" id="indexChatMessageInput" />
+	</form>
+</div>

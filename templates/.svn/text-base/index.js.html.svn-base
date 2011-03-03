@@ -1,0 +1,31 @@
+<script type="text/javascript">
+function sendMessage(mform)
+{
+	var url = "cmpt470.csil.sfu.ca:8003";
+	http.open("POST", url, true);
+	http.send(mform.message.value);
+    //alert("Insert AJAX here!\n\nMessage text: " + mform.message.value);
+    xmlhttpPost('/nodeChat');
+}
+
+function xmlhttpPost(strURL)
+{
+    var xmlHttpReq = false;
+    var self = this;
+    // Mozilla/Safari
+    if (window.XMLHttpRequest) {
+        self.xmlHttpReq = new XMLHttpRequest();
+    }
+    // IE
+    else if (window.ActiveXObject) {
+        self.xmlHttpReq = new ActiveXObject("Microsoft.XMLHTTP");
+    }
+    self.xmlHttpReq.open('GET', strURL, true);
+    self.xmlHttpReq.onreadystatechange = function() {
+        if (self.xmlHttpReq.readyState == 3) {
+            $('#indexChatBox').innerHtml += self.xmlHttpReq.responseText;
+        }
+    }
+    self.xmlHttpReq.send();
+}
+</script>

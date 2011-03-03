@@ -1,0 +1,11 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+<title>{{ PAGE_TITLE }}</title>
+<meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+<link type="text/css" rel="stylesheet" href="media/style.css" media="all" />
+<link rel="icon" href="/node/favicon.ico" type="image/x-icon" />
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.0/jquery.min.js"></script>
+{{ HEAD_SPACE }}
+</head>
+<body>
