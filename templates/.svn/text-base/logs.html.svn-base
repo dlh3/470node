@@ -1,0 +1,12 @@
+<div id="logContainer" class="logs">
+<div id="logDatePick" class="logs">
+<form>
+<select name="log" id="logDateDrop" onchange="submit()">
+{{ LOG_DATES }}</select>
+<input type="submit" id="logDateSubmit" value="View Log" />
+</form>
+</div>
+<div id="logContents" class="logs">
+{{ LOG_OUTPUT }}
+</div>
+</div>

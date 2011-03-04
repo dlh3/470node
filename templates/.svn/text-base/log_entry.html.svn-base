@@ -1,0 +1,6 @@
+<div id="{{ LOG_NAME }}" class="logEntry">
+<dl><dt>{{ LOG_NAME }}</dt>
+<dd><pre>
+{{ LOG_DATA }}</pre>
+</dd></dl><br />
+</div>

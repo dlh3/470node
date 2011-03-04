@@ -1,0 +1,21 @@
+<div id="indexContent">
+	<h1>Welcome to Awesome Chat</h1>
+	<h2>To chat, try "telnet cmpt470.csil.sfu.ca 8083".</h2>
+	<div id="index">
+	<a href="./upload.js">Upload a file</a><br />
+	<a href="./logs.js">Logs</a><br />
+	<br />
+	<div id="indexChatLoginForm">
+	<form action="#" method="GET" onsubmit="webLogin(this); return false;">
+		<input type="text" name="nickname" id="indexChatLoginInput" />
+		<input type="submit" value="Log into WebChat" />
+	</form>
+	</div>
+	<form action="#" method="GET" onsubmit="sendMsg(this); return false;">
+		<div id="indexChatBox">
+		</div>
+		<br />
+		<input type="submit" value="Send" />
+		<input type="text" name="message" id="indexChatMessageInput" />
+	</form>
+</div>
