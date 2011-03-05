@@ -1,3 +1,0 @@
-<h1>You have successfully uploaded {{ FILE_NAME }} ({{ FILE_SIZE }})</h1>
-<h2>It is available at: <a href="{{ FILE_PATH }}">{{ FILE_NEW_NAME }}</a></h2>
-

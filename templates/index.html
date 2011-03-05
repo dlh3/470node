@@ -13,9 +13,16 @@
 	</div>
 	<form action="#" method="GET" onsubmit="sendMsg(this); return false;">
 		<div id="indexChatBox">
+		    Enter a username and login to begin.
 		</div>
-		<br />
-		<input type="submit" value="Send" />
-		<input type="text" name="message" id="indexChatMessageInput" />
+    	<div id="indexChatMessageForm">
+    		<input type="submit" value="Send" />
+    		<input type="text" name="message" id="indexChatMessageInput" autocomplete="off" />
+		</div>
 	</form>
+	<div id="indexChatUserBox">
+	Users:
+	    <div id="indexChatUserList">
+	    </div>
+	</div>
 </div>
